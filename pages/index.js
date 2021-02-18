@@ -14,11 +14,6 @@ export default class HomePage extends Component {
             return (<script async defer data-website-id="3aa5ec3a-fd12-47f1-97d7-cceb0631cae4" src="https://analytics.bale.media/umami.js"></script>);
     }
 
-    card() {
-        if(process.env.NODE_ENV === 'production' )
-            return (<script src="https://card.codyogden.com/card.js"></script>);
-    }
-
     render() {
         return (
             <>
@@ -56,7 +51,6 @@ export default class HomePage extends Component {
                 <Header />
                 <App />
                 <Footer />
-                {this.card()}
             </>
         );
     }
