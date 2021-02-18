@@ -9,11 +9,6 @@ import Loader from '../components/Loader';
 
 export default class HomePage extends Component {
 
-    analytics() {
-        if (process.env.NODE_ENV === 'production' && typeof window !== 'undefined' )
-            return (<script async defer data-website-id="3aa5ec3a-fd12-47f1-97d7-cceb0631cae4" src="https://analytics.bale.media/umami.js"></script>);
-    }
-
     render() {
         return (
             <>
@@ -46,7 +41,6 @@ export default class HomePage extends Component {
                     <meta name="msvalidate.01" content="0C9605AF449480F57421EECCA9EB2B8A" />
                     <meta name="google-site-verification" content="9y9dretKdifnWDdkbkT9Qm1PtWMIe3qz6R09Xkm8Cdc" />
                     <script id="mcjs" src="chimp.js"></script>
-                    {this.analytics()}
                 </Head>
                 <Header />
                 <App />
